@@ -10,4 +10,9 @@ dependent_deduction= 3000
 
 taxable_income =gross_income - standar_deduction - (dependents*dependent_deduction)
 tax= taxable_income*tax_rate
-print(tax)
+print('tax:')
+if tax >=0:
+  print(tax)
+ else:
+  print("0")
+  
