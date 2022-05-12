@@ -14,10 +14,11 @@ print(m)
 
 #d
 r_1 = int(input("Enter Number"))
-a = int(input("Enter Angle in Radians"))
-b = math.cos(a)
-c = math.sin(a)
-answ = (r_1*(b)**2 + r_1*(c)**2)**(1/2)
+a = int(input("Enter Angle in degrees for cos"))
+b=int(input("Enter Angle in degrees for sin"))
+c = math.cos(a*math.pi/180)**2
+d = math.sin(b*math.pi/180)**2
+answ = (r_1*c + r_1*d)**0.5
 print(answ)
 
 #e
